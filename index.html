@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        .card-panel {
+            border-radius: 10px;
+        }
+
+        .card-action {
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .card-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+
+
+        }
+    </style>
+</head>
+
+<body class="teal lighten-3 ">
+  
+ 
+    <div class="container">
+        <h1 class="center">Number Guesser</h1>
+        <div class="col s6 offset-s3">
+            <div class="card-panel center" id="game">
+                <span class="card-title">Guess a number between <span class="minNumb"></span> and <span class="maxNumb"></span></span>
+                <hr>
+
+                <div class="card-action">
+                    <div class="row">
+                        <div class="col s12">
+                            <div>
+                                <div class="input-field col s8 offset-s2">
+                                    <input type="text" id='guessInput'>
+                                    <label for="guessInput">Enter a number </label>
+                                      
+                                </div>
+                                <div class="input-field col s8 offset-s2">
+                                    <button class="btn-floating btn-large teal lighten-3" type="submit" id="guessBtn"><i class="material-icons">add</i></button>
+                                </div>
+                                 
+                                  
+                            </div>
+
+
+                        </div>
+                        <p class="message"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+ 
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
